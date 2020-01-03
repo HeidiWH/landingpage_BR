@@ -1,1 +1,5 @@
-@import "oplysninsside.css";
+@import "oplysningsside.css";
+
+* {
+    font-family: 'Kalam', cursive;
+}
