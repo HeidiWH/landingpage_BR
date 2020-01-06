@@ -1,8 +1,7 @@
 .info {
-    background-color: #81CAD0;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    background-color: white;
+    display: grid;
+    justify-items: center;
     margin: 20px 5px 10px 5px;
 }
 
@@ -28,13 +27,26 @@ h2 {
 }
 
 .download {
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
     justify-content: center;
+}
+
+.download img {
+    justify-self: center;
+    margin: 15px;
+}
+
+.appstore {
+    width: 45%;
+}
+
+.googleplay {
+    width: 50%;
 }
 
 button {
     color: white;
     background-color: red;
     font-size: 2em;
+    margin: 20px 80px
 }
