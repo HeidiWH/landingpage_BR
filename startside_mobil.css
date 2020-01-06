@@ -1,0 +1,42 @@
+
+body{
+    background-color: #81CAD0;
+    margin: 0%;
+    padding: 0%;
+}
+img.logo{
+    width: 100px;
+    height: 100px;
+   
+}
+
+header{
+    display:grid;
+    grid-template-columns: 30% 70% ;
+    color:black;
+    margin-top: 5px;
+}
+.overskrift{
+    display:flex ;
+    flex-direction: column;
+    text-align: left;
+    font-size: x-large;
+}
+
+h1{
+    margin-bottom: 0;
+    text-align: center;
+}
+p{
+    margin: 0;
+}
+
+.talebobbel{
+    max-width: 100%;
+
+  
+}
+.BR_mascot{
+    max-width: 90%;
+
+}
