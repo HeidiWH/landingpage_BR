@@ -5,9 +5,7 @@ body{
     padding: 0%;
 }
 img.logo{
-    width: 100px;
-    height: 100px;
-   
+    max-width: 100%;
 }
 
 header{
@@ -17,10 +15,10 @@ header{
     margin-top: 5px;
 }
 .overskrift{
+    justify-self: left;
     display:flex ;
     flex-direction: column;
-    text-align: center;
-    font-size: x-large;
+    font-size: 6vw;
 }
 
 h1{
@@ -29,6 +27,7 @@ h1{
 }
 p{
     margin: 0;
+    text-align: center;
 }
 
 .BR_tale {
@@ -36,8 +35,8 @@ p{
 }
 
 .talebobbel{
-    max-width: 100%;
-    max-height: 100%;
+    max-width: 200%;
+    max-height: 200%;
     justify-self: center; 
 }
 
@@ -69,3 +68,36 @@ p{
   .snowflake:nth-of-type(7){left:70%;-webkit-animation-delay:2.5s,1s;animation-delay:2.5s,1s}
   .snowflake:nth-of-type(8){left:80%;-webkit-animation-delay:1s,0s;animation-delay:1s,0s}
   .snowflake:nth-of-type(9){left:90%;-webkit-animation-delay:3s,1.5s;animation-delay:3s,1.5s}
+
+@media (min-width: 390px) {
+    .overskrift{
+        font-size: 30px;
+    }
+    img.logo{
+        max-width: 140px;
+    }
+}
+
+
+  @media (min-width: 700px) {
+    img.logo{
+        max-width: 160px;
+    }
+    .BR_tale {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+
+    }
+    
+    .talebobbel{
+        grid-column: 2/4;
+        
+        justify-self: center;
+    }
+    .BR_mascot{
+        grid-column: 1/3;
+        
+        max-width: 110%;
+        max-height: 110%;
+        }
+  }
