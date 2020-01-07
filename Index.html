@@ -78,13 +78,17 @@
         <section class="BR_tale">
             <img src="bob5.png"  class="talebobbel1" alt="bobbel_tekst"> 
             <img src="bob9.png"  class="talebobbel2" alt="bobbel_tekst"> 
-            <img class="højtaler animated infinite pulse delay 6s" src="speaker.png" alt="Højtaler">
+        <audio id="audio_play">            
+                <source src="BR sangen.mp3" type="audio/ogg" />
+                <source src="BR sangen.mp3" type="audio/mpeg" />
+        </audio>
+            <img class="højtaler animated infinite pulse delay 6s" src="speaker.png" alt="Højtaler" onClick="document.getElementById('audio_play').play(); return false;">
             <img src="BR5.png" class="BR_mascot" alt="BR_picture">
         </section>    
         <section class="om_appen">
             <article class= "info">
                 <h2>Scan stregkode</h2>
-                <img src="skan.png" >
+                <img src="skan.png" > 
                 <p>Scan fra Ønskebogen eller butik direkte ind i appen</p>
             </article>
             <article class= "info">
