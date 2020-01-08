@@ -16,6 +16,7 @@
         “name”: “Ønskeappen” ,
         “description”: “Julehjælpen er på vej”,
         “image”: “bob5.png”
+        “image”: “bob9.png”
         “image”: “skan.png”
         “image”: “del.png”
         “image”: “oversigt.png”
@@ -77,7 +78,11 @@
         <section class="BR_tale">
             <img src="bob5.png"  class="talebobbel1" alt="bobbel_tekst"> 
             <img src="bob9.png"  class="talebobbel2" alt="bobbel_tekst"> 
-            <img class="højtaler animated infinite pulse delay 6s" src="speaker.png" alt="Højtaler">
+        <audio id="audio_play">            
+                <source src="BR sangen.mp3" type="audio/ogg" />
+                <source src="BR sangen.mp3" type="audio/mpeg" />
+        </audio>
+            <img class="højtaler animated infinite pulse delay 6s" src="speaker.png" alt="Højtaler" onClick="document.getElementById('audio_play').play(); return false;">
             <img src="BR5.png" class="BR_mascot" alt="BR_picture">
         </section>    
         <section class="om_appen">
